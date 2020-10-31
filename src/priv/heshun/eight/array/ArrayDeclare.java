@@ -12,6 +12,13 @@ public class ArrayDeclare {
         // 数组的静态初始化
         int[] array1 = new int[]{1, 2, 3};
 
+        // 数组的静态初始化缩减型写法，类型自动推断
+        int[] array3 = {1, 2, 3};
+
+        // 这里换行后，无法使用缩减型写法
+        // int[] array4;
+        // array4 = {1, 2, 3};
+
         // 数组的动态初始化
         int[] array2 = new int[3];
         array2[0] = 1;
