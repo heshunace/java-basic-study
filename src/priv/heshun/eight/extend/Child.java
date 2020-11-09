@@ -1,8 +1,6 @@
 package priv.heshun.eight.extend;
 
-public class Child extends Parent {
-
-    public int a = 2;
+public class Child extends AbstractParent {
 
     @Override
     public void b() {
