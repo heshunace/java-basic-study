@@ -1,15 +1,16 @@
 package priv.heshun.eight.thread;
 
 /**
+ * 同步代码块处理实现Runnable接口的线程安全问题
  * @author heshun
  * @create 2020-11-16 23:52
  */
-public class SellTicketsRunnable implements Runnable {
+public class SyncBlockRunnable implements Runnable {
 
     /**
-     * ticket为线程共享的数据
+     * railway_ticket为线程共享的数据
      */
-    private static int railway_ticket = 100;
+    private int railway_ticket = 100;
 
     /**
      * 任何一个类的对象，都可以充当锁；但要求多个线程必须要共用同一把锁

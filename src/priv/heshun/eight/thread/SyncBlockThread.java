@@ -1,13 +1,15 @@
 package priv.heshun.eight.thread;
 
 /**
+ * 同步代码块处理继承Thread类的线程安全问题
  * @author heshun
  * @create 2020-11-16 23:22
  */
-public class SellTicketsThread extends Thread {
+public class SyncBlockThread extends Thread {
 
     /**
-     * ticket为线程共享的数据
+     * air_ticket为线程共享的数据
+     * 此处同样必须为static
      */
     private static int air_ticket  = 100;
 
