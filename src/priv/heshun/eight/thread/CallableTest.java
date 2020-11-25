@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
+ * 采用实现Callable接口的方式创建多线程
  * @author heshun
  * @create 2020-11-24-10:52
  **/
@@ -14,7 +15,7 @@ public class CallableTest implements Callable {
      * 100以内(包含100)的偶数和
      */
     @Override
-    public Object call() throws Exception {
+    public Integer call() throws Exception {
         int sum = 0;
         for (int i = 1; i <= 100; i++) {
             if (i % 2 == 0) {
