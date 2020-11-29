@@ -1,6 +1,7 @@
 package priv.heshun.eight.enumtest;
 
 /**
+ * 使用Enum关键字定义枚举类
  * @author heshun
  * @create 2020-11-28 16:02
  */
@@ -34,7 +35,7 @@ public enum EnumTest {
         this.age = age;
     }
 
-    // 此处一般无需重写toString，默认的toString打印当前枚举对象的对象名
+    // 此处一般无需重写toString，默认的toString打印当前枚举类对象常量的名称
 
     public static void main(String[] args) {
         System.out.println(EnumTest.PERSON4);

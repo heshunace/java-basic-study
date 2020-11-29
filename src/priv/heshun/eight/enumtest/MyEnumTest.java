@@ -1,6 +1,7 @@
 package priv.heshun.eight.enumtest;
 
 /**
+ * 自定义枚举类
  * @author heshun
  * @create 2020-11-28 16:02
  */
