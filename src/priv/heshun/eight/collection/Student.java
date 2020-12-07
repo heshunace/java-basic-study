@@ -1,5 +1,7 @@
 package priv.heshun.eight.collection;
 
+import java.util.Objects;
+
 /**
  * 学生类
  *
@@ -37,6 +39,21 @@ public class Student implements Comparable{
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        System.out.println("User equals()");
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(name, student.name) &&
+                Objects.equals(age, student.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 
     @Override
