@@ -6,12 +6,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * 读取文件和写出
+ * 文件字节流实现文本文件的读取和写出
  *
  * @author heshun
  * @create 2020-12-07-10:08
  **/
-public class FileReadAndWrite {
+public class FileReaderAndWriter {
     public static void main(String[] args) {
 
         /*
