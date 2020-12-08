@@ -23,10 +23,10 @@ public class BufferedIsAndOs {
             // 3.创建处理流，并套接在节点流上
             BufferedInputStream bis = new BufferedInputStream(fis);
             BufferedOutputStream bos = new BufferedOutputStream(fos);
-            // byte数组读入
+
+            // 4.读入并写出
             int len;
             byte[] data = new byte[1024];
-            // 读入并写出
             System.out.println("开始读取和写出");
             long start = System.currentTimeMillis();
             while((len = bis.read(data)) != -1) {
@@ -38,7 +38,7 @@ public class BufferedIsAndOs {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            // 4.关闭流
+            // 5.关闭流
             // 关闭外层流的同时，内层流也会自动进行关闭；故内层流的关闭可以省略
             if(fis != null) {
                 try {

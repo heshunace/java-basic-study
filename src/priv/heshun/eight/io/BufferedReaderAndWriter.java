@@ -46,6 +46,7 @@ public class BufferedReaderAndWriter {
                 bufferedWriter.write(data2, 0 , len);
                 bufferedWriter.flush();
             }
+            System.out.println("读取和写出完成");
 
             // 方式三：整行读入
             String data3;
